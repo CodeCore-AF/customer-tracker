@@ -31,7 +31,15 @@ customers.shift();
 customers[0].email = "Ratattack@uvebeenhacked.net";
 
 //Add a new purchase to a customers purchases array with .push().
-customers[2].purchases.push("vegtable peeler");
+customers[2].purchases.push("vegetable peeler");
+
+//Define the function to use the forEach() loop
+function customerLogger(currentCustomer) {
+    console.log(`Customer's Name: ${currentCustomer.name}`);
+    console.log(`Email: ${currentCustomer.email}`);
+    console.log(`Purchases: ${currentCustomer.purchases}\n`);
+};
 
 /*Loop through customers array with .forEach() method.
 within the loop, Log the customer's attributes with template literals.*/
+customers.forEach(customerLogger);
