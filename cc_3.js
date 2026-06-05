@@ -25,3 +25,4 @@ customers.push({
 });
 
 //Remove the first customer using .shift() method
+customers.shift();
